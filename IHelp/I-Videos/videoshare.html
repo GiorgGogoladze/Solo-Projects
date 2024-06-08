@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Share Video</title>
+    <link rel="stylesheet" href="videoshare.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Share-Video</h1>
+        <form id="uploadForm">
+            <input type="file" id="videoFile" accept="video/*" required>
+            <input type="text" id="videoTitle" placeholder="Title" required>
+            <textarea id="videoDescription" placeholder="Description" required></textarea>
+            <button type="submit">Upload Video</button>
+        </form>
+        <h2>Uploaded Videos</h2>
+        <div id="videoList"></div>
+    </div>
+    <script src="videoshare.js"></script>
+</body>
+</html>
