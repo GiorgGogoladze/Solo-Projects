@@ -1,0 +1,25 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Register</h2>
+        <form id="register-form" onsubmit="return validateForm()">
+            <label for="password">Password:</label>
+            <input type="password" id="password" required oninput="checkStrength()">
+            <div id="strength">
+                <div id="strength-meter"></div>
+            </div>
+            <div id="strength-text"></div>
+            <button type="submit"><a href="bank.html">Sign up</a></button>
+            <div id="error-message"></div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
